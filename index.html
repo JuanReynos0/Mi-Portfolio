@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- MENU -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Juan</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()"> 
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!-- INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/yope.jpeg" alt="perfil">
+            </div>
+            <h1>JUAN REYNOSO</h1>
+            <h2>Desarrollador Web FrontEnd Jr.</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/juan.reynoso.10420321/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/JuSeRe7"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/_juan.reynoso_/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/juan-reynoso-4302a82a1/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- SOBRE MI -->
+    <seccion id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Juan Reynoso</span> Tengo un gran desempeño en trabajo grupal/individual, excelente responsabilidad, puntualidad, compromiso y disposición. Destaco por mi resolución de problemas y por mi sentido de liderazgo. Gracias a mi expeiencia laboral adquiri un gran manejo de liderazgo y un sobresaliente trabajo grupal</p>
+            <div class="fila">
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            25-06-2003
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            +5493764993393
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            Jusere7gt@gmail.com
+                        </li>
+                        <li>
+                            <strong>GitHub</strong>
+                            https://github.com/JuanReynos0
+                        </li>
+                        <li>
+                            <strong>Ubicacion</strong>
+                            Misiones, Argentina
+                        </li>
+                        <li>
+                            <strong>Ocupación</strong>
+                            Freelancer
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-computer"></i>
+                            <span>TECNOLOGIA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>DEPORTES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-palette"></i>
+                            <span>ARTE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="curriculum.pdf" download="CV-JUANREYNOSO"><button type="button" class="btn btn-primary"> DESCARGAR CV <i class="fa-solid fa-download"></i></button></a>
+    </seccion>
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Frameworks</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>88%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>92%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>77%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educacion</h3>
+                    <div class="item izq">
+                        <h4>Programador Web FullStack</h4>
+                        <span class="casa">SILICON MISIONES</span>
+                        <span class="fecha">2023</span>
+                        <p>Programador Web FrontEnd Jr, dominando HTML, CSS, JavaScript y una gran variedad de Frameworks. Gran mejora en trabajos en equipo y resolucion de problemas.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Bachillerato Completo</h4>
+                        <span class="casa">BAPAyC</span>
+                        <span class="fecha">2022</span>
+                        <p>Bachillerato Completo con varios reconocimientos, entre ellos: Asistencia del 95%, participación en las olimpiadas de Matematicas, gran compromiso y mérito con el instituto.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Trabajo</h3>
+                    <div class="item der">
+                        <h4>Mozo</h4>
+                        <span class="casa">Vladimir Resto Bar</span>
+                        <span class="fecha">2023</span>
+                        <p>Mozo en Vladimir Resto Bar. Sobresaliente trabajo en equipo y muy buen liderazgo, manipulación de alimentos, atencion al publico destacable y genial resolucion de problemas.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Distribuidor y Encargado</h4>
+                        <span class="casa">Distribuidora Rayo</span>
+                        <span class="fecha">2022</span>
+                        <p>Distribuidor y Encargado en Distribuidora Rayo. Principios de liderazgo y manejo de personal bajo cargo, manipulacion de alimentos, excelente atencion al publico y encargo de entregas, sobresaliente resolucion de problemas. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <div class="col">
+                    <form action="https://formspree.io/f/mvojjaee" method="post">
+                    <input type="text" name="Nombre" placeholder="Nombre">
+                    <input type="text" name="Telefono" placeholder="Número telefonico">
+                    <input type="text" name="Correo" placeholder="Correo electronico">
+                    <input type="text" name="Tema" placeholder="Tema">
+                    <textarea name="Mensaje" id="msj" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button type="submit" class="btn btn-primary">Enviar <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                <div class="col">
+                    <img src="img/posadas.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Misiones, Argentina
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Telefono: +5493764993393
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Correo: Jusere7gt@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-circle-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/juan.reynoso.10420321/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/JuSeRe7"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/_juan.reynoso_/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/juan-reynoso-4302a82a1/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
